@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-panel":"../../components/panel/panel",
+    "my-notice":"../../components/notice/notice"
+  }
+}

@@ -1,0 +1,41 @@
+
+.collapse-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30rpx 32rpx;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #ebedf0;
+}
+
+.title{
+  color: #323233;
+  font-size: 28rpx;
+  line-height: 24rpx;
+}
+
+.rightIcon{
+  width: 32rpx;
+  height: 30rpx;
+
+}
+
+.collapse-content {
+  height:0px;
+  overflow:hidden;
+  transition:height .3s;  
+  background-color: #fff;
+
+}
+
+
+.collapse-content > view{
+  padding: 24rpx 32rpx;
+  color: #525252;
+  font-size: 28rpx;
+  line-height: 1.5;
+  background-color: #fff;
+}

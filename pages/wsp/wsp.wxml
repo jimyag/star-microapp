@@ -1,0 +1,34 @@
+<view class="container">
+  <block wx:if="{{hasBinding}}">
+    <my-line></my-line>
+    <view class="myInput" bindtap="qrscan">
+      <view class="name">签到</view>
+    </view>
+    <my-line></my-line>
+    <view class="background"></view>
+    <my-line></my-line>
+    <view class="myInput" bindtap="schedule">
+      <view class="name">值班表</view>
+    </view>
+    <my-line></my-line>
+    <view class="background"></view>
+    <my-line></my-line>
+    <view class="myInput" bindtap="detail">
+      <view class="name">工作记录</view>
+    </view>
+
+
+
+  </block>
+  <block wx:else>
+    <view class="tips-view">资助部门介绍</view>
+    <block wx:for="{{collapseList}}" wx:key="ID">
+      <v-collapse title="{{item.sector_name}}" index="{{index}}" actionIndex="{{threeActionIndex}}"
+        collapse-item-class="item-class" customRightIcon="true" bind:switchCollapseItem="threeSwiteFun">
+        <button slot="right-icon" class="right-icon" catchtap="join"
+          style="width: fit-content;background-color:transparent;" data-sector="{{item}}">加入我们</button>
+        <view slot="collapse-item">{{item.sector_information}}</view>
+      </v-collapse>
+    </block>
+  </block>
+</view>

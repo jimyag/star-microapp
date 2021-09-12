@@ -1,0 +1,35 @@
+
+<view class="container">
+<view class="titile">
+请联系"{{sector.sector_name}}"负责人进行面试，面试通过后会下发邀请码
+<view>负责人:{{sector.supervisor}}</view>
+<view>地点:{{sector.address}}</view>
+<view>联系方式:{{sector.phone}}</view>
+</view>
+<view>
+  <view class="myInput">
+    <view class="name">姓名</view>
+    <input bindinput="bindStudentName" class="content" placeholder="请输入姓名"></input>
+  </view>
+  <my-line></my-line>
+  <view class="background"></view>
+  <my-line></my-line>
+  <view class="myInput">
+    <view class="name">学号</view>
+    <input bindinput="bindStudentId" class="content" placeholder="请输入学号"></input>
+  </view>
+  <my-line></my-line>
+  <view class="background"></view>
+  <my-line></my-line>
+  <view class="myInput">
+    <view class="name">部门邀请码</view>
+    <input bindinput="bindSector" class="content" placeholder="请输入部门邀请码"></input>
+  </view>
+  <my-line></my-line>
+  <view class="background"></view>
+</view>
+<view class="button">
+  <button bindtap="sign" style="background: #00b26a;">提交</button>
+</view>
+  
+</view>

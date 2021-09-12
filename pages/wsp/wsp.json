@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-collapse":"../../components/collapse/collapse",
+    "my-line":"../../components/line/line"
+  }
+}

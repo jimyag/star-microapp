@@ -1,0 +1,8 @@
+<view class="box">
+  <view class="title">{{title}}</view>
+  <view class="remark">
+    <view class="time remark-font">{{remark_left}}</view>
+  <view class="duration remark-font">{{remark_right}}</view>
+  </view>
+  
+</view>

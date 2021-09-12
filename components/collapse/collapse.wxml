@@ -1,0 +1,15 @@
+<view class="collapse">
+  <view class="collapse-box custom-collapse" catch:tap="switchCollapseList" data-index="{{index}}">
+    <view class="title custom-title">{{title}}</view>
+    <!-- 设置右边的图标 -->
+    <view wx:if="{{customRightIcon}}" >
+      <slot name="right-icon"></slot>
+    </view>
+  </view>
+  <!--  -->
+  <view class="collapse-content" style="height: {{index == actionIndex ? collapseItemHeihgt*2 : 0}}rpx">
+    <view class="collapse-item-class">
+      <slot name="collapse-item"></slot>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view>
+  <view wx:for="{{detail}}" wx:key="*this"  class="list">
+  <my-line></my-line>
+  <work-detail title = "{{item.title}}" remark_left = "{{item.begin_time}}" remark_right="时长：{{item.all_time}}" >
+</work-detail>
+<my-line></my-line>
+<!-- {{item.title}} -->
+</view>
+</view>

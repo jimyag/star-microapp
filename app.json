@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/binding/binding",
+    "pages/index/index",
+    "pages/index-paper/index-paper",
+    "pages/wsp/wsp",
+    "pages/wsp-schedule/wsp-schedule",
+    "pages/wsp-detail/wsp-detail",
+    "pages/wsp-qrscan/wsp-qrscan",
+    "pages/mine/mine",
+    "pages/test/test"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fff"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "#FFFFF",
+    "list": [
+      {
+        "selectedIconPath": "/images/home.png",
+        "iconPath": "/images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/home.png",
+        "iconPath": "/images/home.png",
+        "pagePath": "pages/wsp/wsp",
+        "text": "勤助"
+      },{
+        "selectedIconPath": "/images/home.png",
+        "iconPath": "/images/home.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我"
+      }
+    ]
+      
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

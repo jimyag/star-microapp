@@ -1,0 +1,128 @@
+.my-panel{
+  background-color: (255,255,255);
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  min-height: 100%;
+}
+
+.my-panel-source{
+  padding: 32rpx 32rpx 26rpx;
+  color: rgba(0, 0, 0, .9);
+  font-size: 36rpx;
+  font-weight: 700;
+  position: relative;
+}
+
+
+.myline{
+  background: rgba(0, 0, 0, .1);
+  height: 2rpx;
+}
+
+
+.my-panel-content-box{
+  padding: 32rpx;
+  position: relative;
+
+}
+.my-panel-content-box-title{
+  line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-weight: 400;
+    font-size: 34rpx;
+    color: rgba(0, 0, 0, .9);
+    width: auto;
+    white-space: nowrap;
+
+}
+
+.my-panel-content-box-text{
+  line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    color: rgba(0, 0, 0, .3);
+    font-size: 28rpx;
+    padding-top: 8rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  
+
+}
+
+.my-panel-content-box-info{
+  margin-top: 32rpx;
+    padding-bottom: 8rpx;
+    font-size: 26rpx;
+    color: rgba(0, 0, 0, .3);
+    line-height: 1em;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.my-panel-content-box-info-meta{
+  float: left;
+  padding-right: 1em;
+
+}
+.my-panel-content-box-info-meta-extra{
+  padding-left: 1em;
+  border-left: 2rpx solid rgba(0, 0, 0, .3);
+  float: left;
+  padding-right: 1em;
+
+}
+
+.my-panel-more{
+  padding: 32rpx;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: #646d96;
+  font-size: 30rpx;
+}
+
+.my-panel-more-left{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+
+}
+.my-panel-more-right{
+  padding-right: 44rpx;
+  position: relative;
+  text-align: right;
+  color: rgba(0, 0, 0, .5);
+  cursor: text;
+}
+.my-panel-more-right::after{
+  content: " ";
+    width: 24rpx;
+    height: 48rpx;
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    background-color: currentColor;
+    color: var(--weui-FG-2);
+    -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+    mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -24rpx;
+    -webkit-mask-position-x: 0px;
+    -webkit-mask-position-y: 0px;
+    -webkit-mask-repeat-x: no-repeat;
+    -webkit-mask-repeat-y: no-repeat;
+}

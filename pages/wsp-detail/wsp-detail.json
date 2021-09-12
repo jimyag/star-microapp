@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "work-detail":"../../components/work-detail/work-detail",
+    "my-line":"../../components/line/line"
+  }
+}

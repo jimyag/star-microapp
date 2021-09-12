@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-line":"../../components/line/line"
+  }
+}
+

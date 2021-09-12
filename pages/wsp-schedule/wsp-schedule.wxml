@@ -1,0 +1,46 @@
+<!-- 顶部图标 -->
+<view class="top">
+    <view wx:for="{{['一','二','三','四','五']}}" wx:key="*this" class="top-text">周{{item}}
+    </view>
+</view>
+
+
+<view class="scroll">
+
+    <view style="height:800rpx;width:750rpx;display:flex;">
+        <!-- 左侧侧边栏 -->
+        <view>
+            <view wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this" class="left">
+                {{item}}
+            </view>
+        </view>
+        <!-- 画线 -->
+        <view wx:for="{{[1,2,3,4]}}" wx:key="*this">
+            <view style="width:750rpx;margin-top:{{(index+1)*200}}rpx;position: absolute;border-bottom:1rpx solid {{index==1?'red':'lightgray'}};">
+            </view>
+        </view>
+        <!-- 遍历课表 -->
+        <view wx:for="{{schedule}}" wx:key="*this">
+            <!-- 设置每一个网格的大小 -->
+            <view class="flex-item"
+                  style="margin-left:{{(item.day_of_week-1)*140+15}}rpx;background-color:{{color_arrays[nameColor[item.student_name]]}};margin-top:{{(item.course_index-1)*2*100+5}}rpx;">
+                <!-- 填充内容 -->
+                <view class="smalltext">
+                    {{item.student_name}}@{{item.address}}
+                </view>
+            </view>
+        </view>
+        <view class="work_time_title" style="margin-top:840rpx;"> 我的工作时间</view>
+        <view wx:for="{{mySchedule}}" wx:key="*this">
+            <view class="my_item"
+                  style="margin-left:15rpx;background-color:{{color_arrays[nameColor[item.student_name]]}};margin-top:{{900+(index)*60+10}}rpx;">
+                星期{{item.day_of_week}}，节次{{item.course_index}},地点:{{item.address}}
+            </view>
+
+            <!-- <button class="change_button" style="margin-left:250rpx;background-color:{{color_arrays[index * 1 + 1]
+            }};margin-top:{{800 + (index) * 60 + 10}}rpx;">更换</button> -->
+        </view>
+
+    </view>
+
+</view>

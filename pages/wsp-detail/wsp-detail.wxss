@@ -1,0 +1,4 @@
+/* pages/wsp-detail/wsp-detail.wxss */
+.list{
+  background-color: #ffffff;
+}

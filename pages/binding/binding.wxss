@@ -1,0 +1,28 @@
+.myInput{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.titile{
+  height: 400rpx;
+  
+}
+.name{
+  font-size: 35rpx;
+  width: 300rpx;
+  padding: 20rpx;
+  padding-left: 60rpx;
+}
+
+.content{
+  font-size: 30rpx;
+  padding: 35rpx;
+}
+.button{
+  padding: 50rpx;
+  /* background-color:#00b26a; */
+}
+
+.background{
+  color: #eeeeee;
+  height: 40rpx;
+}

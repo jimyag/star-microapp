@@ -1,0 +1,29 @@
+page{
+  height: 100%;
+  background: rgb(238, 238, 238)
+}
+
+.tips-view{
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+
+.item-class{
+  color: red !important;
+}
+
+.name{
+  font-size: 35rpx;
+  width: 300rpx;
+  padding: 20rpx;
+  padding-left: 60rpx;
+}
+.myInput{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.background{
+  color: #eeeeee;
+  height: 40rpx;
+}

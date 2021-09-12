@@ -1,0 +1,12 @@
+<view class="notice">
+<my-notice msgList="{{notice}}">
+</my-notice>
+</view>
+
+<view wx:for="{{article}}" wx:key="ID">
+  <view class="test">
+  <my-panel class="panel" paper="{{item}}"></my-panel>
+</view>
+<view class="background"></view>
+</view>
+

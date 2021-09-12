@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="userinfo">
+        <block  wx:if="{{hasUserInfo}}">
+          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatar_url}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nick_name}}</text>
+        </block>
+        <block wx:elif="{{hasUserInfo&&hasBinding}}">
+          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatar_url}}" mode="cover"></image>
+            <text class="studentinfo-studentname">{{studentInfo.studentName}}</text>
+            <text class="studentinfo-sectorname">{{studentInfo.sectorName}}</text>
+        </block>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userAvatarUrl" src="../../images/unlogin.png" mode="cover"></image>
+            <button class="login" bindtap="getUserProfile">点我登陆</button>
+        </block>
+    </view>
+    <view class="background"></view>
+    <view class="card">关于我们</view>
+    <view class="background"></view>
+    <view class="card">
+      <button open-type="feedback">意见反馈</button>
+    </view>
+    
+</view>

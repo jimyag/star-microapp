@@ -1,0 +1,31 @@
+<view class="my-panel">
+  <view class="my-panel-source">来源
+  </view>
+  <view class="myline"></view>
+  <view class="my-panel-content">
+    <view class="my-panel-content-box">
+      <view class="my-panel-content-box-title">
+      标题
+    </view>
+    <view class="my-panel-content-box-text">
+    我是部分内容
+    </view>
+    <view class="my-panel-content-box-info">
+      <view class="my-panel-content-box-info-meta">
+      作者
+      </view>
+      <view class="my-panel-content-box-info-meta">
+      时间
+      </view>
+      <view class="my-panel-content-box-info-meta my-panel-content-box-info-meta-extra">
+      其他信息
+      </view>
+    </view>
+    </view>
+  </view>
+  <view class="myline"></view>
+  <view class="my-panel-more">
+    <view class="my-panel-more-left">查看详细</view>
+    <view class="my-panel-more-right"></view>
+  </view>
+</view>
