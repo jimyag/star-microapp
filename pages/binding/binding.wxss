@@ -3,8 +3,14 @@
   background-color: rgb(255, 255, 255);
 }
 .titile{
+  /* display: flex; */
   height: 400rpx;
-  
+  font-size: 35rpx;
+  align-items: center;
+  /**子view垂直居中*/
+  vertical-align: center;
+  /**垂直居中*/
+  justify-content: center;
 }
 .name{
   font-size: 35rpx;

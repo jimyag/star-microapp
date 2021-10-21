@@ -14,7 +14,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#eeeeee",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "资助星",
     "navigationBarTextStyle":"black",
     "backgroundColor": "#fff"
   },
@@ -44,8 +44,5 @@
       }
     ]
       
-  },
-  "useExtendedLib": {
-    "weui": true
   }
 }

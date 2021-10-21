@@ -17,11 +17,10 @@
       <view class="name">工作记录</view>
     </view>
 
-
-
   </block>
   <block wx:else>
-    <view class="tips-view">资助部门介绍</view>
+    <view class="tips-view">部门介绍</view>
+    <my-line></my-line>
     <block wx:for="{{collapseList}}" wx:key="ID">
       <v-collapse title="{{item.sector_name}}" index="{{index}}" actionIndex="{{threeActionIndex}}"
         collapse-item-class="item-class" customRightIcon="true" bind:switchCollapseItem="threeSwiteFun">

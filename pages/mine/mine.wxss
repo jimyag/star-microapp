@@ -1,31 +1,52 @@
 .userinfo {
-    height: 300rpx;
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #aaa;
+  height: 300rpx;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
 }
 
 .userAvatarUrl {
-    overflow: hidden;
-    width: 128rpx;
-    height: 128rpx;
-    margin: 20rpx;
-    border-radius: 10rpx;
-}
-.nickName{
-  max-width: 40vw;
-	font-weight: bold;
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
 }
 
-.background{
+.nickName {
+  max-width: 40vw;
+  font-weight: bold;
+}
+
+.background {
   color: #eeeeee;
   height: 40rpx;
 }
 
-.card{
+.card {
   height: 100rpx;
   background-color: rgb(255, 255, 255);
+  width: 100% !important;
+  padding: .5rem;
 }
 
+.menu-option {
+  display: flex;
+  justify-content: space-between;
+  font: inherit;
+  /* 覆盖 <button> 字体 */
+}
+
+.context {
+  display: flex;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  /*设置显示样式**/
+  align-items: center;
+  /**子view垂直居中*/
+  vertical-align: center;
+  /**垂直居中*/
+  justify-content: center;
+}

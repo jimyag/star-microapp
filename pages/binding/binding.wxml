@@ -1,10 +1,10 @@
 
 <view class="container">
 <view class="titile">
-请联系"{{sector.sector_name}}"负责人进行面试，面试通过后会下发邀请码
-<view>负责人:{{sector.supervisor}}</view>
-<view>地点:{{sector.address}}</view>
-<view>联系方式:{{sector.phone}}</view>
+  <text  decode="{{true}}">&emsp;&emsp;请联系 {{sector.sector_name}} 负责人进行面试，面试通过后会下发邀请码。</text>
+<view class="content">    负责人:{{sector.supervisor}}</view>
+<view class="content">    地点:{{sector.address}}</view>
+<view class="content">    联系方式:{{sector.phone}}</view>
 </view>
 <view>
   <view class="myInput">

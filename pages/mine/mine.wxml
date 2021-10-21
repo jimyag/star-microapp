@@ -1,11 +1,11 @@
 <view class="container">
     <view class="userinfo">
         <block  wx:if="{{hasUserInfo}}">
-          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatar_url}}" mode="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nick_name}}</text>
+          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         </block>
         <block wx:elif="{{hasUserInfo&&hasBinding}}">
-          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatar_url}}" mode="cover"></image>
+          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
             <text class="studentinfo-studentname">{{studentInfo.studentName}}</text>
             <text class="studentinfo-sectorname">{{studentInfo.sectorName}}</text>
         </block>
@@ -15,7 +15,9 @@
         </block>
     </view>
     <view class="background"></view>
-    <view class="card">关于我们</view>
+    <view class="card">
+      <view class="context">关于我们</view>
+    </view>
     <view class="background"></view>
     <view class="card">
       <button open-type="feedback">意见反馈</button>

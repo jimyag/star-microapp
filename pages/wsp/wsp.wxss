@@ -4,12 +4,13 @@ page{
 }
 
 .tips-view{
-  margin-left: 20rpx;
-  margin-top: 40rpx;
+  text-align: center;
+  font-size: 50rpx;
+  background-color: #ffffff;
 }
 
 .item-class{
-  color: red !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .name{
