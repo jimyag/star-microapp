@@ -3,7 +3,6 @@ const app = getApp()
 var request = require("../../utils/request.js")
 var config = require("../../utils/config.js")
 Page({
-
   /**
    * 页面的初始数据
    */
