@@ -1,21 +1,3 @@
 <view>
-{{paper.title}}
-</view>
-<view>
-{{paper.release_sector}}
-</view>
-<view>
-{{paper.release_time}}
-</view>
-<view>
-{{paper.content}}
-</view>
-<view>
-{{paper.release_name}}
-</view>
-<view>
-{{paper.phone}}
-</view>
-<view>
-{{paper.attachment}}
+    <rich-text nodes="{{paper.content}}"></rich-text>
 </view>

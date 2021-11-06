@@ -78,7 +78,6 @@ Page({
     var data = {
       "student_id":this.data.studentId,
       "student_name":this.data.studentName,
-      "sector_name":this.data.sector.sector_name,
       "sector_key":this.data.sectorKey
     }
     console.log(data)
@@ -86,13 +85,20 @@ Page({
       "content-type": "application/json",
       "Authorization":"Bearer "+app.globalData.token
   }
-    req.request(config.url+"/sector/"+app.globalData.uid+"/join",data,"POST",header).then((res)=>{
+    req.request(config.url+"/user/"+app.globalData.uid+"/sector"+this.data.sector.sector_name,"POST",header).then((res)=>{
       if(res.data.code===0){
         app.globalData.studentInfo = data
         wx.setStorageSync('studentInfo', data)
-        wx.reLaunch({
-          url: '../wsp/wsp',
+        wx.showModal({
+          showCancel:false,
+          content: '恭喜您，加入成功',
+          success (res){
+            wx.reLaunch({
+              url: '../wsp/wsp',
+            })
+          }
         })
+       
       }else{
         wx.showModal({
           showCancel:false,

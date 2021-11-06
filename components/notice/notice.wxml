@@ -1,7 +1,11 @@
 <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="5000">
   <my-line></my-line>
     <block wx:for="{{msgList}}" wx:key="*this">
-        <swiper-item>
+        <swiper-item style="display:flex;">
+          <view class="left_view">
+            <image class="notice" src="/images/notice.png" ></image>
+          </view>
+          
           <view class="swiper_item">{{item.content}}</view>
         </swiper-item>
     </block>

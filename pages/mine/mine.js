@@ -12,6 +12,7 @@ Page({
         userInfo: {},
         hasUserInfo: false,
         hasBinding:false,
+        studentInfo:{}
     },
     getUserProfile: async function(e) {
         console.groupCollapsed("用户授权");
@@ -25,7 +26,7 @@ Page({
                     "content-type": "application/json",
                     "Authorization":"Bearer "+app.globalData.token
                 }
-                var url = config.url+"/user/"+app.globalData.uid+"/update"
+                var url = config.url+"/user/"+app.globalData.uid
                 var data = res.userInfo
                 console.log(data)
                 req.request(url,data,"PUT",header).then((res)=>{
@@ -67,6 +68,9 @@ Page({
                 hasUserInfo:false
             })
         }
+        this.setData({
+            studentInfo:getApp().globalData.studentInfo
+        })
         console.groupEnd()
     },
 

@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/binding/binding",
     "pages/index/index",
     "pages/index-paper/index-paper",
     "pages/wsp/wsp",
@@ -8,6 +7,8 @@
     "pages/wsp-detail/wsp-detail",
     "pages/wsp-qrscan/wsp-qrscan",
     "pages/mine/mine",
+    "pages/binding/binding",
+    "pages/about/about",
     "pages/test/test"
 
   ],
@@ -26,19 +27,19 @@
     "backgroundColor": "#FFFFF",
     "list": [
       {
-        "selectedIconPath": "/images/home.png",
+        "selectedIconPath": "/images/home1.png",
         "iconPath": "/images/home.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "/images/home.png",
-        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/wsp1.png",
+        "iconPath": "/images/wsp.png",
         "pagePath": "pages/wsp/wsp",
         "text": "勤助"
       },{
-        "selectedIconPath": "/images/home.png",
-        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/mine1.png",
+        "iconPath": "/images/mine.png",
         "pagePath": "pages/mine/mine",
         "text": "我"
       }

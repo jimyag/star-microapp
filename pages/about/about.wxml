@@ -1,0 +1,41 @@
+<view class="container">
+
+<view class="title">关于上应资助星</view>
+<view class="section">
+    <view class="title">联系我们</view>
+    <!-- <view class="hint center">点击群号即可复制</view> -->
+    <view class="content ol">
+        <view class="li">小程序反馈群：481311006</view>
+        <!-- <view class="li">2021级易班新生群：<template is="copy" data="{{text: '147239936'}}" /></view> -->
+        <view class="li">奉贤校区大学生活动中心210室</view>
+    </view>
+</view>
+
+<!-- 关于我们 参与贡献 -->
+<!-- <rich-text class="content" nodes="{{html}}" /> -->
+
+<view class="section">
+    <view class="title">贡献者</view>
+    <view style="display: flex;flex-direction: row; ">
+        <view style="display: flex;flex-direction: column; ">
+            <image src="/images/about/jimyag.jpg" style="   width: 150rpx;  height: 150rpx;  left: 20rpx;  top: 10rpx;  border-radius: 50%;  overflow:hidden;">
+        </image>
+        <text style="text-align: center;">Jimyag</text>
+        </view>
+        <view style="display: flex;flex-direction: column; ">
+            <image src="/images/about/xie_sh.jpg" style=" width: 150rpx;  height: 150rpx;  left: 20rpx;  top: 10rpx;  border-radius: 50%;  overflow:hidden;">
+        </image>
+        <text style="text-align: center;">Zhy.Xie</text>
+        </view>
+        
+    </view>
+</view>
+
+<view class="section">
+    <view class="title">开源代码</view>
+    <view class="content repo-links ul">
+        <view class="repo-link li">https://github.com/jimyag/star-microapp</view>
+    </view>
+</view>  
+
+</view>

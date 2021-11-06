@@ -23,7 +23,7 @@ App({
       // 登录成功
       const loginCode = await login()
       console.log(loginCode)
-      const registration = await req.request(config.url + "/registration", {
+      const registration = await req.request(config.url + "/user", {
         "code": loginCode.code
       }, "POST")
       console.log(registration.data)

@@ -1,26 +1,27 @@
 <view class="container">
-    <view class="userinfo">
-        <block  wx:if="{{hasUserInfo}}">
-          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-        </block>
-        <block wx:elif="{{hasUserInfo&&hasBinding}}">
-          <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-            <text class="studentinfo-studentname">{{studentInfo.studentName}}</text>
-            <text class="studentinfo-sectorname">{{studentInfo.sectorName}}</text>
-        </block>
-        <block wx:else>
-            <image bindtap="bindViewTap" class="userAvatarUrl" src="../../images/unlogin.png" mode="cover"></image>
-            <button class="login" bindtap="getUserProfile">点我登陆</button>
-        </block>
-    </view>
-    <view class="background"></view>
-    <view class="card">
-      <view class="context">关于我们</view>
-    </view>
-    <view class="background"></view>
-    <view class="card">
-      <button open-type="feedback">意见反馈</button>
-    </view>
-    
+  <view class="userinfo">
+    <block wx:if="{{hasUserInfo}}">
+      <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <block wx:elif="{{hasUserInfo&&hasBinding}}">
+      <image bindtap="bindViewTap" class="userAvatarUrl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="studentinfo-studentname">{{studentInfo.student_name}}</text>
+      <text class="studentinfo-sectorname">{{studentInfo.sector_name}}</text>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userAvatarUrl" src="../../images/unlogin.png" mode="cover"></image>
+      <button class="login" bindtap="getUserProfile">点我登录</button>
+    </block>
+  </view>
+  <view class="background"></view>
+  <view class="card">
+    <navigator url="/pages/about/about" class="context">
+      <text>关于我们</text>
+    </navigator>
+  </view>
+  <view class="background"></view>
+  <view class="card">
+    <button open-type="feedback" class="context" style="font-weight: normal;height: 100%; width: 100%;">意见反馈</button>
+  </view>
 </view>

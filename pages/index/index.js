@@ -10,15 +10,17 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
     article:[],
-    notice:[]
+    notice:[],
+    content:"",
   },
   onLoad() {
+    
     var header = {
       "content-type":"application/x-www-form-urlencoded"
     }
     // 获得学校资助通知
    request.request(config.url+"/article",null,null,header).then((res)=>{
-    //  console.log(res)
+     console.log(res)
      this.setData({
        article:res.data.data
      })

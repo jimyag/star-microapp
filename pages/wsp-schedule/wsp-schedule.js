@@ -24,7 +24,7 @@ Page({
             })
 
         } else {
-            const schedule_res = await req.request(config.url + "/schedule/" + app.globalData.studentInfo["sector_name"],
+            const schedule_res = await req.request(config.url + "/sector/" + app.globalData.studentInfo["sector_name"]+"/schedule",
                 null
                 , "GET", { "Authorization": "Bearer " + app.globalData.token })
             if (schedule_res.data.code === 0) {

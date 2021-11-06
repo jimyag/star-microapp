@@ -16,18 +16,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   async onLoad() {
-    const detail_res = await req.request(config.url+"/workform/get/"+app.globalData.studentInfo["student_id"],null,"GET",{
+    const detail_res = await req.request(config.url+"/user/"+app.globalData.uid+"/record",null,"GET",{
       "Authorization":"Bearer " + app.globalData.token 
     })
     var new_detail = []
     if (detail_res.data.code===0){
       var detail = detail_res.data.data
       for(let index in detail){
-        var d = new Date(detail[index]["CreatedAt"])
+        var begin_time = new Date(detail[index]["begin_time"]*1000)
+        console.log(begin_time)
         new_detail[index] = {
           "title":detail[index]["remark"],
-          "begin_time":d.getFullYear()+"-"+d.getMonth()+"-"+d.getDay()+" "+d.getHours()+":"+d.getMinutes(),
-          "all_time":util.timezero2hs(detail[index]["CreatedAt"],detail[index]["UpdatedAt"])
+          "begin_time":begin_time.getFullYear()+"-"+begin_time.getMonth()+"-"+begin_time.getDay()+" "+begin_time.getHours()+":"+begin_time.getMinutes(),
+          "all_time":util.timezero2hs(detail[index]["begin_time"]*1000,detail[index]["end_time"]*1000)
         }
       }
       console.log(new_detail)

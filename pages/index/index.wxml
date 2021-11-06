@@ -9,4 +9,6 @@
 </view>
 <view class="background"></view>
 </view>
-
+<view>
+  <rich-text nodes="{{content}}"></rich-text>
+</view>

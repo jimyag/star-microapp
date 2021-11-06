@@ -29,8 +29,13 @@ Page({
     })
   },
   qrscan(e){
-    wx.navigateTo({
-      url: '../wsp-qrscan/wsp-qrscan',
+    // wx.navigateTo({
+    //   url: '../wsp-qrscan/wsp-qrscan',
+    // })
+    wx.showModal({
+      showCancel:false,
+      title:"签到正在开发中",
+      content:"请稍等"
     })
   },
   detail(e){
@@ -50,7 +55,7 @@ Page({
         hasBinding:true
       })
     }else{
-      request.request(config.url+"/sector/"+app.globalData.uid+"/find",null,"GET",{
+      request.request(config.url+"/user/"+app.globalData.uid+"/sector",null,"GET",{
         "content-type":"application/x-www-form-urlencoded",
         "Authorization":"Bearer "+app.globalData.token
       }).then((res)=>{

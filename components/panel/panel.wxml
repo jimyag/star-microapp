@@ -5,12 +5,10 @@
   <view class="my-panel-content">
     <view class="my-panel-content-box">
       <view class="my-panel-content-box-title">{{paper.release_sector}}</view>
-    <view class="my-panel-content-box-text">{{paper.content_part}} </view>
-    <view class="my-panel-content-box-info">
-      <view class="my-panel-content-box-info-meta">{{paper.release_name}} </view>
-      <view class="my-panel-content-box-info-meta">{{paper.release_time}} </view>
-      <view class="my-panel-content-box-info-meta my-panel-content-box-info-meta-extra">{{paper.phone}} </view>
-    </view>
+      <view class="my-panel-content-box-info">
+        <view class="my-panel-content-box-info-meta">{{paper.author}} </view>
+        <view class="my-panel-content-box-info-meta">{{paper.release_time}} </view>
+      </view>
     </view>
   </view>
   <my-line></my-line>
