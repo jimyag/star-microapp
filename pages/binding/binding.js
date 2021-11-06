@@ -15,12 +15,10 @@ Page({
    */
   onLoad: function (options) {
     let data = JSON.parse(decodeURIComponent(options.data))
-    
     this.setData({
       sector:data.sector 
     })
     console.log(this.data.sector.sector_name)
-
   },
 
   /**
@@ -72,7 +70,7 @@ Page({
 
   },
   sign:function(){
-    
+    console.groupCollapsed("加入部门")
     console.log("提交")
     // todo 校验学号和姓名长度类型
     var data = {
@@ -107,19 +105,17 @@ Page({
         })
       }
     })
-
+    console.groupEnd()
   },
   bindStudentName:function(e){
     this.setData({
       studentName: e.detail.value,
   })
-  console.log(this.data)
   },
   bindStudentId:function(e){
     this.setData({
       studentId: e.detail.value,
   })
-  console.log(this.data)
   
 
   },
@@ -127,7 +123,6 @@ Page({
     this.setData({
       sectorKey: e.detail.value,
   })
-  console.log(this.data)
   }
 
 })

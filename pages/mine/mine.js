@@ -52,7 +52,7 @@ Page({
      * 生命周期函数--监听页面加载
      */  
     onLoad: function (options) {
-        console.groupCollapsed("mine")
+        console.groupCollapsed("我的信息")
         var userInfo = wx.getStorageSync('userInfo')
         console.log(userInfo)
         if (userInfo){

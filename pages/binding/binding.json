@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "加入我们",
   "usingComponents": {
     "my-line":"../../components/line/line"
   }

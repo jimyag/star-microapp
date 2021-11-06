@@ -13,11 +13,12 @@
 
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#eeeeee",
     "navigationBarTitleText": "资助星",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#fff"
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

@@ -49,6 +49,7 @@ Page({
     })
   },
   onLoad:function(params) {
+    console.groupCollapsed("勤工助学")
     var stu_info = wx.getStorageSync('studentInfo')
     if (stu_info){
       this.setData({
@@ -71,10 +72,11 @@ Page({
       "content-type":"application/x-www-form-urlencoded"
     }
     request.request(config.url+"/sector",null,null,header).then((res)=>{
-      // console.log(res.data.data)
+      console.log(res.data.data)
       this.setData({
         collapseList:res.data.data
       })
     })
+    console.groupEnd()
   }
 })

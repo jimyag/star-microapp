@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "工作详情",
   "usingComponents": {
     "work-detail":"../../components/work-detail/work-detail",
     "my-line":"../../components/line/line"

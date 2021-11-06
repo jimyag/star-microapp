@@ -14,7 +14,7 @@ Page({
     content:"",
   },
   onLoad() {
-    
+    console.groupCollapsed("首页加载")
     var header = {
       "content-type":"application/x-www-form-urlencoded"
     }
@@ -27,18 +27,12 @@ Page({
    })
   //  获得程序紧急通知
    request.request(config.url+"/notice",null,null,header).then((res)=>{
-    //  console.log(res.data.data)
+     console.log(res.data.data)
      this.setData({
        notice:res.data.data
      })
    })
-
-  //  console.log(article)
-    // if (wx.getUserProfile) {
-    //   this.setData({
-    //     canIUseGetUserProfile: true
-    //   })
-    // }
+   console.groupEnd()
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
@@ -60,5 +54,27 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onPullDownRefresh: function () {
+    console.groupCollapsed("首页加载-手动刷新")
+    var header = {
+      "content-type":"application/x-www-form-urlencoded"
+    }
+    // 获得学校资助通知
+   request.request(config.url+"/article",null,null,header).then((res)=>{
+     console.log(res)
+     this.setData({
+       article:res.data.data
+     })
+   })
+  //  获得程序紧急通知
+   request.request(config.url+"/notice",null,null,header).then((res)=>{
+     console.log(res.data.data)
+     this.setData({
+       notice:res.data.data
+     })
+   })
+   console.groupEnd()
+   wx.stopPullDownRefresh();
+  },
 })

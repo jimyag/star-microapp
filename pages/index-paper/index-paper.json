@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "学校通知",
   "usingComponents": {
     "my-article":"../../components/article/article"
   }

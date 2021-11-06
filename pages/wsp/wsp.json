@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "勤工助学",
   "usingComponents": {
     "v-collapse":"../../components/collapse/collapse",
     "my-line":"../../components/line/line"

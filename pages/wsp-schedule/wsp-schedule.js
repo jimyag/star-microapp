@@ -15,6 +15,7 @@ Page({
         nameColor: null
     },
     async onLoad() {
+        console.groupCollapsed("值班表")
         let g_schedule = getApp().globalData.schedule
         if (g_schedule["allSchedule"]) {
             this.setData({
@@ -56,9 +57,6 @@ Page({
                 app.globalData.schedule["allSchedule"] = this.data.schedule
             }
         }
-
-
-
-
+        console.groupEnd()
     }
 })
